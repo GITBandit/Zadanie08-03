@@ -14,6 +14,8 @@ public abstract class Shape {
         return name;
     }
 
+    public abstract String info();
+
     public void setName(String name) {
         this.name = name;
     }

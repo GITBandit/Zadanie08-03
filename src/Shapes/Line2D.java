@@ -6,4 +6,8 @@ public class Line2D extends Shape2D {
         super(name, sideA, isShape2D);
     }
 
+    @Override
+    public String info() {
+        return " składająca się z odcinka o długości " + getSideA() + " ma długość ";
+    }
 }
