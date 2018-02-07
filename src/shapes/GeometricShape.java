@@ -6,19 +6,20 @@ public abstract class GeometricShape extends Shape2D {
     private double sideA;
     private double sideB;
 
-    public GeometricShape(String name, double sideA, boolean isShape2D, boolean isAGeometricShape, double sideB) {
-        super(name, /*sideA, */isShape2D);
+    public GeometricShape(String name, double sideA, Enum<ShapeType> shapeTypeEnum, /*boolean isShape2D,*//* boolean isAGeometricShape,*/ double sideB) {
+        super(name, shapeTypeEnum /*sideA, *//*isShape2D*/);
         this.sideA = sideA;
-        this.isAGeometricShape = isAGeometricShape;
+        /*this.isAGeometricShape = isAGeometricShape;*/
         this.sideB = sideB;
     }
 
-    public GeometricShape(String name, double sideA, boolean isShape2D, boolean isAGeometricShape) {
-        super(name,/* sideA, */isShape2D);
+    public GeometricShape(String name, double sideA,Enum<ShapeType> shapeTypeEnum /*boolean isShape2D, boolean isAGeometricShape*/) {
+        super(name, shapeTypeEnum /* sideA, *//*isShape2D*/);
         this.sideA = sideA;
-        this.isAGeometricShape = isAGeometricShape;
+        /*this.isAGeometricShape = isAGeometricShape;*/
     }
 
+/*
     public boolean isAGeometricShape() {
         return isAGeometricShape;
     }
@@ -26,6 +27,7 @@ public abstract class GeometricShape extends Shape2D {
     public void setAGeometricShape(boolean AGeometricShape) {
         isAGeometricShape = AGeometricShape;
     }
+*/
 
     public double getSideA() {
         return sideA;
@@ -41,5 +43,13 @@ public abstract class GeometricShape extends Shape2D {
 
     public void setSideB(double sideB) {
         this.sideB = sideB;
+    }
+
+    public boolean isAGeometricShape() {
+        return isAGeometricShape;
+    }
+
+    public void setAGeometricShape(boolean AGeometricShape) {
+        isAGeometricShape = AGeometricShape;
     }
 }

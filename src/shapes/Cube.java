@@ -3,8 +3,8 @@ package shapes;
 public class Cube extends Shape3D {
 
 
-    public Cube(String name, double sideA, boolean isShape3D) {
-        super(name, sideA, isShape3D);
+    public Cube(String name, double sideA, Enum<ShapeType> shapeTypeEnum/*boolean isShape3D*/) {
+        super(name, shapeTypeEnum, sideA /*isShape3D*/);
     }
 
     @Override

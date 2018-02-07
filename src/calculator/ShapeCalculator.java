@@ -2,13 +2,15 @@ package calculator;
 
 import shapes.*;
 
+import static shapes.ShapeType.*;
+
 public class ShapeCalculator implements Calc2D, Calc3D {
 
     @Override
     public double shapeArea(GeometricShape shape) {
-        if (shape instanceof Circle) {
+        if (shape.getShapeTypeEnum().equals(SHAPE_2D_GEOMETRIC_SHAPE_CIRCLE)) {
             return Math.PI * Math.pow(shape.getSideA(), 2);
-        } else if (shape instanceof Rectangle) {
+        } else if (shape.getShapeTypeEnum().equals(SHAPE_2D_GEOMETRIC_SHAPE_RECTANGLE)) {
             return (shape.getSideA() * shape.getSideB());
         }
         return 0;
@@ -24,9 +26,9 @@ public class ShapeCalculator implements Calc2D, Calc3D {
 
     @Override
     public double volume(Shape3D shape) {
-        if (shape instanceof Ball)
+        if (shape.getShapeTypeEnum().equals(SHAPE_3D_BALL))
         return (4/3.f*Math.PI*Math.pow(shape.getSideA(),3));
-            if (shape instanceof Cube)
+            if (shape.getShapeTypeEnum().equals(SHAPE_3D_CUBE))
         return Math.pow(shape.getSideA(),3);
         return 0;
     }

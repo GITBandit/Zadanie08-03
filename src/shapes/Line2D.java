@@ -8,16 +8,16 @@ public class Line2D extends Shape2D {
     private double point2Y;
     private boolean onePoint = false;
 
-    public Line2D(String name, double point1X, double point1Y, double point2X, double point2Y, boolean isShape2D) {
-        super(name, isShape2D);
+    public Line2D(String name, double point1X, double point1Y, double point2X, double point2Y, Enum<ShapeType> shapeTypeEnum /*boolean isShape2D*/) {
+        super(name, shapeTypeEnum);
         this.point1X = point1X;
         this.point1Y = point1Y;
         this.point2X = point2X;
         this.point2Y = point2Y;
     }
 
-    public Line2D(String name, double point1X, double point1Y, boolean isShape2D) {
-        super(name, isShape2D);
+    public Line2D(String name, double point1X, double point1Y, Enum<ShapeType> shapeTypeEnum /*boolean isShape2D*/) {
+        super(name, shapeTypeEnum);
         this.point1X = point1X;
         this.point1Y = point1Y;
         this.onePoint = true;
