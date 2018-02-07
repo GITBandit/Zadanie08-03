@@ -16,14 +16,6 @@ public class ShapeCalculator implements Calc2D, Calc3D {
         return 0;
     }
 
-/*    @Override
-    public double circleArea(Circle circle) {
-    }
-
-    @Override
-    public double rectangleArea(Rectangle rectangle) {
-    }*/
-
     @Override
     public double volume(Shape3D shape) {
         if (shape.getShapeTypeEnum().equals(SHAPE_3D_BALL))

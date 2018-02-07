@@ -1,7 +1,7 @@
 package calculator;
 
 import shapes.Line2D;
-import shapes.Shape;
+
 
 public class LineCalc {
 

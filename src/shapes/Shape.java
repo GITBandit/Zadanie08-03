@@ -4,12 +4,10 @@ public abstract class Shape {
 
     private String name;
     private Enum<ShapeType> shapeTypeEnum;
-    //private double sideA;
 
-    public Shape(String name, Enum<ShapeType> shapeTypeEnum/*, double sideA*/) {
+    public Shape(String name, Enum<ShapeType> shapeTypeEnum) {
         this.name = name;
         this.shapeTypeEnum = shapeTypeEnum;
-        //this.sideA = sideA;
     }
 
     public String getName() {
@@ -21,15 +19,6 @@ public abstract class Shape {
     public void setName(String name) {
         this.name = name;
     }
-
-/*    public double getSideA() {
-        return sideA;
-    }*/
-
-   /* public void setSideA(double sideA) {
-        this.sideA = sideA;
-    }
-*/
 
     public Enum<ShapeType> getShapeTypeEnum() {
         return shapeTypeEnum;
