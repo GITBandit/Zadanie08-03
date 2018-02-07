@@ -1,13 +1,13 @@
-package Shapes;
+package shapes;
 
 public abstract class Shape {
 
     private String name;
-    private double sideA;
+    //private double sideA;
 
-    public Shape(String name, double sideA) {
+    public Shape(String name/*, double sideA*/) {
         this.name = name;
-        this.sideA = sideA;
+        //this.sideA = sideA;
     }
 
     public String getName() {
@@ -20,19 +20,19 @@ public abstract class Shape {
         this.name = name;
     }
 
-    public double getSideA() {
+/*    public double getSideA() {
         return sideA;
-    }
+    }*/
 
-    public void setSideA(double sideA) {
+   /* public void setSideA(double sideA) {
         this.sideA = sideA;
     }
-
+*/
     @Override
     public String toString() {
         return "Shape{" +
                 "name='" + name + '\'' +
-                ", sideA=" + sideA +
+                //", sideA=" + sideA +
                 '}';
     }
 

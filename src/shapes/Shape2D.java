@@ -1,11 +1,11 @@
-package Shapes;
+package shapes;
 
 public abstract class Shape2D extends Shape {
 
     private boolean isShape2D;
 
-    public Shape2D(String name, double sideA, boolean isShape2D) {
-        super(name, sideA);
+    public Shape2D(String name, /*double sideA, */boolean isShape2D) {
+        super(name/*, sideA*/);
         this.isShape2D = isShape2D;
     }
 

@@ -1,8 +1,8 @@
-package ShapeTest;
+package shapeTest;
 
-import Calculator.LineCalc;
-import Calculator.ShapeCalculator;
-import Shapes.*;
+import calculator.LineCalc;
+import calculator.ShapeCalculator;
+import shapes.*;
 
 
 public class ShapeTest {
@@ -12,17 +12,18 @@ public class ShapeTest {
         ShapeCalculator calculator = new ShapeCalculator();
         LineCalc lineCalculator = new LineCalc();
 
-        Shape[] shapes = new Shape[5];
+        Shape[] shapes = new Shape[6];
         shapes[0] = new Cube("Sześcian",4,true);
         shapes[1] = new Ball("Kula",1,true);
-        shapes[2] = new Line2D("Linia",5,true);
+        shapes[2] = new Line2D("Linia",-2, 2, 1, 6,true);
         shapes[3] = new Rectangle("Prostokąt",2,true, true,4);
         shapes[4] = new Circle("Kółko", 3,true, true);
+        shapes[5] = new Line2D("Linia (jeden punkt)", 4,-7,true);
 
 
             for (Shape sh: shapes) {
                 if (sh instanceof Line2D){
-                    System.out.println(sh.getName() + sh.info() +  lineCalculator.lineLength(sh) + " :)");
+                    System.out.println(sh.getName() + sh.info() +  lineCalculator.lineLength((Line2D)sh));
                 } else if (sh instanceof Shape3D) {
                     System.out.println(sh.getName() + sh.info() + calculator.volume((Shape3D) sh));
                 } else if (sh instanceof GeometricShape){

@@ -1,6 +1,6 @@
-package Calculator;
+package calculator;
 
-import Shapes.*;
+import shapes.*;
 
 public class ShapeCalculator implements Calc2D, Calc3D {
 

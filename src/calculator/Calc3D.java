@@ -1,8 +1,6 @@
-package Calculator;
+package calculator;
 
-import Shapes.Ball;
-import Shapes.Cube;
-import Shapes.Shape3D;
+import shapes.Shape3D;
 
 public interface Calc3D {
 
